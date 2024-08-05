@@ -1,21 +1,20 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/dotnet",
+    "image": "ghcr.io/manchestermachinemakers/android-devcontainer:main",
+    "runArgs": [ "--init" ],
     "features": {
-        "ghcr.io/devcontainers/features/github-cli": "latest",
-        "ghcr.io/devcontainers/features/git": "latest",
-        "ghcr.io/devcontainers/features/common-utils": "latest"
+      "ghcr.io/devcontainers/features/github-cli": "latest",
+      "ghcr.io/devcontainers/features/git": "latest",
+      "ghcr.io/devcontainers/features/common-utils": "latest"
     },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "github.copilot",
-                "github.copilot-chat",
-                "GitHub.vscode-pull-request-github",
-                "GitHub.remotehub",
-                "GitHub.vscode-github-actions",
-                "GitHub.codespaces",
-                "ms-vscode.vscode-github-issue-notebooks"
-            ]
-        }
-    }
+    "extensions": [
+        "vscjava.vscode-java-pack",
+        "fwcd.kotlin",
+        "github.copilot",
+        "github.copilot-chat",
+        "GitHub.vscode-pull-request-github",
+        "GitHub.remotehub",
+        "GitHub.vscode-github-actions",
+        "GitHub.codespaces",
+        "ms-vscode.vscode-github-issue-notebooks"
+    ]
 }
