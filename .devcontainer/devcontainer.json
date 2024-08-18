@@ -7,6 +7,7 @@
       "android-sdk": "latest"
     },
     "postCreateCommand": "sdkmanager --install 'platforms;android-30' 'build-tools;30.0.3'",
+    "postStartCommand": "emulator -avd csu24facsc475_emulator",
     "customizations": {
         "vscode": {
             "extensions": [
