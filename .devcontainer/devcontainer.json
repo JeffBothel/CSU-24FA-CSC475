@@ -1,13 +1,19 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/dotnet",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/devcontainers/features/github-cli": "latest",
-        "ghcr.io/devcontainers/features/git": "latest",
-        "ghcr.io/devcontainers/features/common-utils": "latest"
+      "ghcr.io/devcontainers/features/github-cli": "latest",
+      "ghcr.io/devcontainers/features/git": "latest",
+      "ghcr.io/devcontainers/features/common-utils": "latest",
+      "android-sdk": "latest"
     },
+    "postCreateCommand": "sdkmanager --install 'platforms;android-30' 'build-tools;30.0.3'",
     "customizations": {
         "vscode": {
             "extensions": [
+                "ms-vscode.vscode-typescript-tslint-plugin",
+                "ms-azuretools.vscode-docker",
+                "vscjava.vscode-java-pack",
+                "fwcd.kotlin",
                 "github.copilot",
                 "github.copilot-chat",
                 "GitHub.vscode-pull-request-github",
