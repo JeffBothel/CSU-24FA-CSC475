@@ -1,4 +1,5 @@
 {
+    "name": "CSU-24FA-CSC475-AndroidDev",
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
     "features": {
       "ghcr.io/devcontainers/features/github-cli": "latest",
